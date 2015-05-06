@@ -1,0 +1,9 @@
+edu.iris.dmc.criteria
+edu.iris.dmc.event.model
+edu.iris.dmc.extensions.entities
+edu.iris.dmc.extensions.fetch
+edu.iris.dmc.extensions.utils
+edu.iris.dmc.sacpz.model
+edu.iris.dmc.service
+edu.iris.dmc.timeseries.model
+edu.iris.dmc.ws.util

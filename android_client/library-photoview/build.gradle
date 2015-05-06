@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 21
+    }
+    productFlavors {
+        experimental {
+            minSdkVersion 19
+            targetSdkVersion 21
+            useJack = false
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:21.0.3'
+}

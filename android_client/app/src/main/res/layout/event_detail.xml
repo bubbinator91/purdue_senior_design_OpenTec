@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_location"
+        android:id="@+id/event_location"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_magnitude"
+        android:id="@+id/event_label_magnitude"
+        android:layout_below="@+id/event_location"
+        android:layout_alignStart="@+id/event_location"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_magnitude"
+        android:layout_alignTop="@+id/event_label_magnitude"
+        android:layout_toEndOf="@+id/event_label_magnitude"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_magnitudetype"
+        android:layout_alignTop="@+id/event_magnitude"
+        android:layout_toEndOf="@+id/event_magnitude"
+        android:layout_marginStart="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_depth"
+        android:id="@+id/event_label_depth"
+        android:layout_below="@+id/event_label_magnitude"
+        android:layout_alignStart="@+id/event_label_magnitude"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_depth"
+        android:layout_alignTop="@+id/event_label_depth"
+        android:layout_toEndOf="@+id/event_label_depth"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_latitude"
+        android:id="@+id/event_label_latitude"
+        android:layout_below="@+id/event_label_depth"
+        android:layout_alignStart="@+id/event_label_depth"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_latitude"
+        android:layout_alignTop="@+id/event_label_latitude"
+        android:layout_toEndOf="@+id/event_label_latitude"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_longitude"
+        android:id="@+id/event_label_longitude"
+        android:layout_below="@+id/event_label_latitude"
+        android:layout_alignStart="@+id/event_label_latitude"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_longitude"
+        android:layout_alignTop="@+id/event_label_longitude"
+        android:layout_toEndOf="@+id/event_label_longitude"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_timestamp"
+        android:id="@+id/event_label_timestamp"
+        android:layout_below="@+id/event_label_longitude"
+        android:layout_alignStart="@+id/event_label_longitude"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_timestamp"
+        android:layout_alignTop="@+id/event_label_timestamp"
+        android:layout_toEndOf="@+id/event_label_timestamp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_label_cause"
+        android:id="@+id/event_label_cause"
+        android:layout_below="@+id/event_label_timestamp"
+        android:layout_alignStart="@+id/event_label_timestamp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_data"
+        android:id="@+id/event_cause"
+        android:layout_alignTop="@+id/event_label_cause"
+        android:layout_toEndOf="@+id/event_label_cause"
+        android:layout_marginStart="5dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_wiggle_data_progressBar"
+        android:layout_below="@+id/event_cause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_wiggle_data"
+        android:layout_below="@+id/event_wiggle_data_progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

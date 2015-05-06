@@ -1,0 +1,6 @@
+AuthUserFile /path/to/.htpasswd/file/here
+AuthGroupFile /dev/null
+AuthName "Please Enter Password"
+AuthType Basic
+Require valid-user
+ErrorDocument 401 /error.php

@@ -1,0 +1,31 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+*.java      text
+*.xml       text
+*.pom       text=auto
+*.wsdl      text=auto
+*.WSDL      text=auto
+*.xsd       text=auto
+*.xsl       text=auto
+*.XSL       text=auto
+*.txt       text=auto
+*.pom       text=auto
+*.css       text=auto
+*.htm       text=auto
+*.html      text=auto
+*.sh        eol=lf
+*.bat       eol=crlf
+*.cmd       eol=crlf
+*.bmp       binary
+*.doc       binary
+*.jpg       binary
+*.gif       binary
+*.png       binary
+*.class     binary
+*.rtf       binary
+*.zip       binary
+*.jar       binary
+*.war       binary
+.classpath  text=auto
+.project    text=auto
